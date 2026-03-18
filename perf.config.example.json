@@ -5,7 +5,7 @@
     "host": "localhost",
     "port": 5432,
     "user": "perf",
-    "password": "perf",
+    "password": "<your-password>",
     "dbName": "perf_metrics"
   }
 }
