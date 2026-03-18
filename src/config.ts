@@ -14,7 +14,20 @@ export interface PerfConfig {
   };
 }
 
-function loadJsonConfig(): Partial<PerfConfig> {
+interface JsonConfig {
+  environment?: string;
+  version?: string;
+  database?: {
+    connectionString?: string;
+    host?: string;
+    port?: number;
+    user?: string;
+    password?: string;
+    dbName?: string;
+  };
+}
+
+function loadJsonConfig(): JsonConfig {
   const configPath = join(process.cwd(), 'perf.config.json');
   if (!existsSync(configPath)) return {};
   try {
