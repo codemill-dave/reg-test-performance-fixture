@@ -1,0 +1,11 @@
+{
+  "environment": "local",
+  "version": "unknown",
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "user": "perf",
+    "password": "perf",
+    "dbName": "perf_metrics"
+  }
+}
